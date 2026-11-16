@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ivory: #f7f5f0;
+  --color-charcoal: #191919;
+  --color-terracotta: #b66d52;
+  --color-beige: #e9e3d9;
+  --color-olive: #777b60;
+
+  --font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "Manrope", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --spacing-section: clamp(4.5rem, 8vw, 8.5rem);
+  --spacing-gutter: clamp(1.25rem, 3vw, 3rem);
+}
+
+:root {
+  --bg-primary: #f7f5f0;
+  --bg-secondary: #e9e3d9;
+  --ink-primary: #191919;
+  --accent-terracotta: #b66d52;
+  --accent-olive: #777b60;
+}
+
+html {
+  background-color: var(--bg-primary);
+  color: var(--ink-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--ink-primary);
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #b66d52;
+  color: #f7f5f0;
+}
+
+.editorial-container {
+  width: 100%;
+  max-width: 1520px;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 3.5rem);
+}
+
+.hairline-b {
+  border-bottom: 1px solid rgba(25, 25, 25, 0.12);
+}
+
+.hairline-t {
+  border-top: 1px solid rgba(25, 25, 25, 0.12);
+}
+
+.hairline-all {
+  border: 1px solid rgba(25, 25, 25, 0.12);
+}
+
+.paper-grain {
+  background-image: radial-gradient(rgba(25, 25, 25, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 34s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.forme-swiper .swiper-slide {
+  height: auto;
+}

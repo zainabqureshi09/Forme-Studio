@@ -1,0 +1,6 @@
+{
+  "name": "FORME STUDIO",
+  "description": "Your Memories. Our Canvas. Architectural custom photo frames, museum-grade archival editions, and bespoke wall art crafted in solid hardwood and Belgian linen.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
